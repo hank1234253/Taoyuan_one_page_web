@@ -98,7 +98,12 @@ $(function () {
                 myModal.show();
             }
         })
-        $("table").dataTable();
+        $("table").dataTable({
+            language: {
+                url: "https://cdn.datatables.net/plug-ins/1.11.3/i18n/zh_Hant.json" 
+            }
+        });
+        
     })
 
     let myModal = new bootstrap.Modal("#myModal");
