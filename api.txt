@@ -1,0 +1,2 @@
+event.json¥»©u¬¡°Ê
+https://travel.tycg.gov.tw/open-api/swagger/ui/index#/Event/Event_Activity

@@ -4,171 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>桃園旅遊網</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
         integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        .nav {
-            transition-duration: 0.5s;
-        }
-
-        .bg {
-            background-color: cornflowerblue;
-        }
-
-        img {
-            width: 570px;
-            height: 320px;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .white {
-            color: white;
-        }
-
-
-        body{
-            background-image: url(https://wda.mackliu.com/s1120201/calendar/img/bg.jpg);
-            background-attachment: fixed;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+    <link rel="stylesheet" href="css/css.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg  nav fixed-top bg" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg fixed-top nav  nav-bg" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">WenHan</a>
+            <a class="navbar-brand" href="#">
+                <div class="icon">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                桃園旅遊
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                <ul class="navbar-nav mx-auto">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"
-                                style="color: #ffffff;"></i>&nbsp;Home</a>
+                        <a class="nav-link active" aria-current="#link1" href="./index.html"><i
+                                class="fa-solid fa-house" style="color: #ffffff;"></i>&nbsp;首頁</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#mid"><i class="fa-solid fa-star"
-                                style="color: #ffffff;"></i>&nbsp;作品集</a>
+                        <a class="nav-link active" href="#link2"><i class="fa-solid fa-star"
+                                style="color: #ffffff;"></i>&nbsp;最新活動</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#floor">test</a>
+                        <a class="nav-link active" href="#link3"><i class="fa-solid fa-location-dot"
+                                style="color: #ffffff;"></i>&nbsp;旅遊景點</a>
                     </li>
                 </ul>
-
-                <a href="#">
-                    <div
-                        style="display: inline-block; background-color: white;  border-radius: 50%; text-align: center; width: 25px;">
-                        <i class="fa-solid fa-user" style="color: #6495ED;">
-                        </i>
-                    </div>
-                    <span class="white">&nbsp;登入</span>
-                </a>
             </div>
 
         </div>
     </nav>
-    <div class="glass" style="height: 94vh; margin-top: 60px;" id="top">
-        123
+    <div id="top">
+        <div class="box">
+            <div style="position: absolute;bottom: 2vw;">
+                <button class="btn btn-lg" style="color:white;background-color: rgb(230, 0, 122);"
+                    onclick="location.href='#link2'">探索桃園</button>
+            </div>
+        </div>
+        <iframe class="yt" width="560" height="315" src="" title="YouTube video player" frameborder="0"></iframe>
     </div>
 
+
     <div class="bg text-center p-3" id="mid">
-        <h3 class="white">作品集</h3>
-        <div id="carouselExampleIndicators" class="carousel slide p-3">
+        <div id="link2"></div>
+        <h3 class="white my-4">最新活動</h3>
+        <div id="carouselExampleIndicators" class="carousel slide p-3" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active container-fluid">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="card mx-auto" style="width: 30rem;">
-                                <a href="https://wda.mackliu.com/s1120201/hw ">
-                                    <img src="https://wda.mackliu.com/s1120201/img/restaurant.jpg" class="card-img-top"
-                                        alt="點餐系統">
-                                    <div class="card-body">
-                                        <p class="card-text text-center">點餐系統</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="white">
-                                test
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-                <div class="carousel-item container-fluid">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="card mx-auto" style="width: 30rem;">
-                                <a href="https://wda.mackliu.com/s1120201/calendar">
-                                    <img src="https://wda.mackliu.com/s1120201/img/calendar.jpg" class="card-img-top"
-                                        alt="萬年曆">
-                                    <div class="card-body">
-                                        <p class="card-text text-center">萬年曆</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="white">
-                                test2
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="carousel-item container-fluid">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="card mx-auto" style="width: 30rem;">
-                                <a href="https://wda.mackliu.com/s1120201/cardgame">
-                                    <img src="https://wda.mackliu.com/s1120201/img/cardgame.jpg" class="card-img-top"
-                                        alt="翻牌遊戲">
-                                    <div class="card-body">
-                                        <p class="card-text text-center">翻牌遊戲</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="white">
-                                test3
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="carousel-item container-fluid">
-                    <div class="row">
-
-                        <div class="col-12 col-md-6">
-                            <div class="card mx-auto" style="width: 30rem;">
-                                <a href="https://wda.mackliu.com/s1120201/snake">
-                                    <img src="https://wda.mackliu.com/s1120201/img/snake.jpg" class="card-img-top"
-                                        alt="貪食蛇">
-                                    <div class="card-body">
-                                        <p class="card-text text-center">貪食蛇</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="white">
-                                test4
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
@@ -184,16 +79,62 @@
     </div>
     </div>
 
-    <div style="height: 90vh;" id="floor">
-        123
+    <div class="text-center container">
+        <div id="link3"></div>
+        <h3 class="mt-5">旅遊景點</h3>
+        <table class="display">
+            <thead>
+                <tr data-id="0">
+                    <th class="text-center">名稱</th>
+                    <th class="text-center">地點</th>
+                    <th class="text-center">開放時間</th>
+                    <th class="text-center">聯絡電話</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
     </div>
 
-    <div class="bg text-center p-4" style="height: 20vh;">
-        <div style="color:white">
-            Copyright © 2023 Wen Han Huang All rights reserved.
+
+    <div class="modal modal-xl fade p-3" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title ">Modal title</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-3">
+                    <div class="mt-5" style="float: right;">
+                        <iframe class="map" width="400" height="400" src=""  
+                        frameborder="0" style="border:0" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="textbody">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="" target="_blank" class="btn btn-primary" id="web1">官方網站</a>
+                    <a href="" target="_blank" class="btn btn-danger bg" id="web2">桃園觀光導覽網</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                </div>
+            </div>
         </div>
     </div>
 
+    
+    <div class="bg text-center p-4 mt-5">
+        <div class="white">
+            Copyright © 2023 Wen Han Huang. All rights reserved.
+        </div>
+    </div>
+
+    <a class="top" href="#">
+        Top
+    </a>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
@@ -202,21 +143,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        $(function () {
-            let scroll = window.scrollY;
-            $(window).scroll(function () {
-                if (window.scrollY > scroll) {
-                    $("nav").css("top", "-60px");
-                    scroll = window.scrollY;
-                }
-                if (window.scrollY < scroll) {
-                    $("nav").css("top", "0px");
-                    scroll = window.scrollY;
-                }
-            })
-        })
-    </script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+    <script src="./js/js.js"></script>
 </body>
 
 </html>

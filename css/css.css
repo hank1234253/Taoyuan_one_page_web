@@ -1,0 +1,109 @@
+body {
+    overflow-x: hidden;
+}
+
+#top {
+    width: 99vw;
+    height: 48.5vw;
+}
+
+.box{
+    width: 99vw;
+    height: 48.5vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.bg {
+    background-color: rgba(230, 0, 122, 1);
+    color: white;
+}
+
+
+nav {
+    box-shadow: 0 -1px 5px #ccc;
+}
+
+.nav-bg {
+    background-color: rgba(230, 0, 122, 0);
+}
+
+.nav-link {
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+    transition-duration:0.5s
+}
+
+.white {
+    color: white;
+}
+
+.icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
+
+#mid img {
+    width: 40vw;
+    height: 25vw;
+}
+
+.navbar-brand {
+    font-size: 28px;;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 5rem;
+    height: 5rem;
+
+}
+
+.yt {
+    background-color: black;
+    width: 100vw;
+    height: 70vw;
+    position: absolute;
+    top: -14.5vw;
+    z-index: -99;
+}
+
+#link2,
+#link3 {
+    position: relative;
+    top: -110px;
+}
+
+.top{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #ccc;
+    background-color: white;
+    border: 1px solid #ccc;
+    font-size: 22px;
+    color:rgb(230, 0, 122);
+    opacity: 0;
+    transition-duration:0.5s;
+}
+
+tr{
+    cursor: pointer;
+}
