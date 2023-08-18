@@ -48,7 +48,7 @@ $(function () {
                         <td>
                             ${valueOfElement.Add}
                         </td>
-                        <td>
+                        <td class="mobile">
                             ${valueOfElement.Opentime}
                         </td>
                         <td>
